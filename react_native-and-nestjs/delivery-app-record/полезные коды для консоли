@@ -1,4 +1,0 @@
-nest g resource <user> --no-spec # генерация пакета классов для сущности user
-npm install --global expo-cli #установка expo глобально на комп
-npx create-expo-app -t expo-template-blank-typescript #установка пустого шаблона expo пакета приложения
-

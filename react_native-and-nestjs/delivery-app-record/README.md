@@ -103,6 +103,24 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
 
 
-окончил на 1:16:00 ссылка на видео https://youtu.be/JTKN5m6UtIY?si=__o9Efd0MsbuM8VV
+окончил на 1:42:07 ссылка на видео https://youtu.be/JTKN5m6UtIY?si=__o9Efd0MsbuM8VV
 https://github.com/TeaCoder52/delivery-app-server
+https://github.com/TeaCoder52/delivery-app-client
 C:\Users\Petr\git\React_Native_Test\react_native-and-nestjs\delivery-app-record\server
+
+NEST JS
+nest g resource <user> --no-spec                      # генерация пакета классов для сущности user
+
+REACT NATIVE
+npm install --global expo-cli                         #установка expo глобально на комп
+npx create-expo-app -t expo-template-blank-typescript #установка пустого шаблона expo пакета приложения
+yarn start                                            #старт expo и показ штрихкода для подключения
+yarn add @trivago/prettier-plugin-imports prettier babel-plagin-root-import #установка различных плагинов притера для сортировки импортов и другое не проканала
+yarn add @react-navigation/native                     #установка навигации https://reactnavigation.org/docs/getting-started
+npx expo install react-native-screens react-native-safe-area-context #продолжение установки навигации https://reactnavigation.org/docs/getting-started
+yarn add @react-navigation/native-stack               #стэк для навигейшена https://reactnavigation.org/docs/native-stack-navigator
+yarn add @react-navigation/core                       #из видео взято может и не потребуется
+yarn add nativewind tailwindcss react-native-reanimated react-native-safe-area-context #изза tailwindcss https://www.nativewind.dev/getting-started/expo-router
+npx tailwindcss init #продолжение для tailwind создаст файл tailwind.config.js
+yarn add react-hook-form                              #для валидации хук форм
+yarn add clsx                                         #

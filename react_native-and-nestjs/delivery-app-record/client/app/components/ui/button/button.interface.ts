@@ -1,5 +1,6 @@
-import { PressableProps } from 'react-native'
+import { PressableProps, StyleProp, ViewStyle, TextStyle } from "react-native";
 
 export interface IButton extends PressableProps {
-	className?: string
+  style?: StyleProp<ViewStyle>; // Для стилей кнопки
+  textStyle?: StyleProp<TextStyle>; // Дополнительно для стилизации текста (опционально)
 }

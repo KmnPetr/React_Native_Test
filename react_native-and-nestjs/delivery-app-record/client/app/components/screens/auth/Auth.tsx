@@ -7,15 +7,21 @@ import { FC, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { View,Text, Pressable, StyleSheet } from "react-native";
 import AuthFields from "./AuthFields";
+import { useAuthMutations } from "./useAuthMutations";
 
 const Auth:FC =()=> {
 
     const [isReg,setIsReg] = useState(false)
     const {handleSubmit,reset,control} = useForm<IAuthFormData>({mode:'onChange'})
-    
-    const onSubmit:SubmitHandler<IAuthFormData>=data=>{console.log(data)}
 
-    const isLoading = false
+    const { isLoading, registerSync, loginSync } = useAuthMutations(reset)
+
+    const onSubmit: SubmitHandler<IAuthFormData> = data => {
+      console.log(`onSubmit. data=${data}`)
+      if (isReg) registerSync(data)
+      else loginSync(data)
+    }
+
     return(
         <View style={styles.container}>
             <View style={styles.innerContainer}>
@@ -28,16 +34,16 @@ const Auth:FC =()=> {
                     <Button onPress={handleSubmit(onSubmit)}>
                         <Text>{isReg? 'Sign Up': 'Login'}</Text>
                     </Button>
-					<Pressable onPress={() => setIsReg(!isReg)}>
-					    <Text style={styles.switchText}>
-						    {isReg
-							    ? 'Already have an account? '
-							    : "Don't have an account? "}
-							    <Text style={styles.highlightText}>
-								    {isReg ? 'Login' : 'Sign up'}
-							    </Text>
-					    </Text>
-				    </Pressable>
+                  <Pressable onPress={() => setIsReg(!isReg)}>
+                    <Text style={styles.switchText}>
+                      {isReg
+                        ? 'Already have an account? '
+                        : "Don't have an account? "}
+                        <Text style={styles.highlightText}>
+                          {isReg ? 'Login' : 'Sign up'}
+                        </Text>
+                    </Text>
+                  </Pressable>
                 </>
                 }
             </View>
@@ -75,3 +81,4 @@ const styles = StyleSheet.create({
   });
 
 export default Auth
+

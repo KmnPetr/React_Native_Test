@@ -8,6 +8,7 @@ import PrivateNavigator from "./PrivateNavigator";
 import React from "react";
 import ButtomMenu from "@/components/ui/layout/bottom-menu/ButtomMenu";
 import { useAuth } from "@/hooks/useAuth";
+import { useCheckAuth } from "@/providers/auth/useCheckAuth";
 
 const Stack = createNativeStackNavigator<TypeRootStackParamList>()
 
@@ -28,6 +29,8 @@ const Navigation:FC =()=> {
 			navRef.removeListener('state', listener)
 		}
 	}, [])
+    
+    useCheckAuth(currentRoute)
 
     return(
         <>

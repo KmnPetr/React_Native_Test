@@ -103,13 +103,14 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
 
 
-окончил на 2:14:21 ссылка на видео https://youtu.be/JTKN5m6UtIY?si=__o9Efd0MsbuM8VV
+окончил на 3:15:39 ссылка на видео https://youtu.be/JTKN5m6UtIY?si=__o9Efd0MsbuM8VV
 https://github.com/TeaCoder52/delivery-app-server
 https://github.com/TeaCoder52/delivery-app-client
 C:\Users\Petr\git\React_Native_Test\react_native-and-nestjs\delivery-app-record\server
 
 NEST JS
 nest g resource <user> --no-spec                      # генерация пакета классов для сущности user
+npm install @nestjs/serve-static app-root-path        #для работы со статическими файлами
 
 REACT NATIVE
 npm install --global expo-cli                         #установка expo глобально на комп
@@ -125,9 +126,11 @@ npx tailwindcss init #продолжение для tailwind создаст фа
 yarn add react-hook-form                              #для валидации хук форм
 yarn add clsx                                         #
 npx expo install expo-splash-screen                   #для сплэшскринов https://docs.expo.dev/versions/latest/sdk/splash-screen/
-
-
-
+npx expo install react-native-toast-message           #для тостов
+yarn add axios
+yarn add babel-plugin-inline-dotenv
+npx expo install expo-secure-store @react-native-async-storage/async-storage #для сохранения секьюрных токенов
+yarn add @tanstack/react-query                        #для удобства просмотра запросов
 
 
 

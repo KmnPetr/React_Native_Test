@@ -1,15 +1,11 @@
 import { getItemAsync } from 'expo-secure-store'
 import { useEffect } from 'react'
-
 import { useAuth } from '@/hooks/useAuth'
-
 import { EnumSecureStore } from '@/types/auth.interface'
-
 import { getAccessToken } from '@/services/auth/auth.helper'
 import { AuthService } from '@/services/auth/auth.service'
-
 import { errorCatch } from '@/api/error.api'
-import { getNewTokens } from '@/api/helper.api'
+import { getNewTokens } from '@/api/helper.auth'
 
 export const useCheckAuth = (routeName?: string) => {
 	const { user, setUser } = useAuth()

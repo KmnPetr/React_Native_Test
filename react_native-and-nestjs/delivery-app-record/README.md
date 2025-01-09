@@ -103,7 +103,7 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
 
 
-окончил на 3:15:39 ссылка на видео https://youtu.be/JTKN5m6UtIY?si=__o9Efd0MsbuM8VV
+окончил на 3:45:00 ссылка на видео https://youtu.be/JTKN5m6UtIY?si=__o9Efd0MsbuM8VV
 https://github.com/TeaCoder52/delivery-app-server
 https://github.com/TeaCoder52/delivery-app-client
 C:\Users\Petr\git\React_Native_Test\react_native-and-nestjs\delivery-app-record\server
@@ -131,7 +131,7 @@ yarn add axios
 yarn add babel-plugin-inline-dotenv
 npx expo install expo-secure-store @react-native-async-storage/async-storage #для сохранения секьюрных токенов
 yarn add @tanstack/react-query                        #для удобства просмотра запросов
-
-
+yarn add redux-persist @reduxjs/toolkit               #редакс
+yarn add react-redux                                  #сам написал была необходимость
 
 

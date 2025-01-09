@@ -1,9 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
-
-import { useTypedRoute } from '@/hooks/useTypedRoute'
-
 import { CategoryService } from '@/services/category.service'
 import { ProductService } from '@/services/product.service'
+import { useTypedRoute } from '@/hooks/useTypedRoute'
 
 export const useCategory = () => {
 	const { params } = useTypedRoute<'Category'>()

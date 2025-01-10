@@ -111,6 +111,8 @@ C:\Users\Petr\git\React_Native_Test\react_native-and-nestjs\delivery-app-record\
 NEST JS
 nest g resource <user> --no-spec                      # генерация пакета классов для сущности user
 npm install @nestjs/serve-static app-root-path        #для работы со статическими файлами
+npx prisma db push                                    #сравнивает схему бд со схемой призмы может чтото удалять из бд
+yarn add stripe                                       #установка платежной системы страйп https://dashboard.stripe.com/ на видео с 3:57:41 не удалось установить дальше код не работает просто видео прослушано
 
 REACT NATIVE
 npm install --global expo-cli                         #установка expo глобально на комп
